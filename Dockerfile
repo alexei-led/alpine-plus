@@ -1,9 +1,8 @@
 FROM alpine:3.4
 
-RUN apk add --update \
+RUN apk add --no-cache \
     curl \
     wget \
     openssl \
     ca-certificates \
-    iproute2 \
-  && rm -rf /var/cache/apk/*
+    iproute2
