@@ -7,3 +7,5 @@ RUN apk update && \
     openssl \
     ca-certificates \
     iproute2
+
+ENTRYPOINT ["curl"]
